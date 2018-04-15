@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using Wingale.View;
+using System.Windows.Data;
 
 namespace Wingale
 {
@@ -9,5 +9,12 @@ namespace Wingale
     /// </summary>
     public partial class Program : Application
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public Program()
+        {
+            ShutdownMode = ShutdownMode.OnMainWindowClose;
+        }
     }
 }

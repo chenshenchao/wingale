@@ -10,15 +10,13 @@ namespace Wingale.View
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Tray tray;
-
         /// <summary>
         /// 
         /// </summary>
         public MainWindow()
         {
             InitializeComponent();
-            tray = new Tray();
+            Tray tray = FindResource("tray") as Tray;
             SetBinding(VisibilityProperty, new Binding()
             {
                 Source = tray,
@@ -35,6 +33,7 @@ namespace Wingale.View
         protected override void OnClosing(CancelEventArgs e)
         {
             base.OnClosing(e);
+            Tray tray = FindResource("tray") as Tray;
             Visibility = Visibility.Hidden;
             e.Cancel = tray.Able;
         }

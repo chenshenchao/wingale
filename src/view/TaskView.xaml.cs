@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
-namespace Wingale.Widget
+namespace Wingale.View
 {
     /// <summary>
     /// TaskView.xaml 的交互逻辑
@@ -23,6 +24,7 @@ namespace Wingale.Widget
         public TaskView()
         {
             InitializeComponent();
+            table.ItemsSource = Process.GetProcesses();
         }
     }
 }

@@ -2,8 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Wingale"
              x:Class="Wingale.Program"
-             StartupUri="view/MainWindow.xaml">
+             StartupUri="src/view/MainWindow.xaml">
     <Application.Resources>
-        <local:Tray x:Key="tray"/>
     </Application.Resources>
 </Application>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -25,11 +25,11 @@
   </ItemGroup>
   
   <ItemGroup>
-	<Compile Include="src\Kernel32.cs"/>
+	<Compile Include="src\Kernel32.cs" />
   </ItemGroup>
   
   <ItemGroup>
-	<Compile Include="src\Tray.cs"/>
+	<Compile Include="src\widget\Tray.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,11 +44,11 @@
   </ItemGroup>
   
    <ItemGroup>
-	<Page Include="src\widget\TaskView.xaml">
+	<Page Include="src\view\TaskView.xaml">
 	  <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
 	</Page>
-	<Compile Include="src\widget\TaskView.xaml.cs">
+	<Compile Include="src\view\TaskView.xaml.cs">
       <DependentUpon>TaskView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>

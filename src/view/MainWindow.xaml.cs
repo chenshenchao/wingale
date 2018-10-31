@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Data;
+using Wingale.Widget;
 
 namespace Wingale.View
 {
@@ -10,13 +11,14 @@ namespace Wingale.View
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Tray tray;
         /// <summary>
         /// 
         /// </summary>
         public MainWindow()
         {
             InitializeComponent();
-            Tray tray = FindResource("tray") as Tray;
+            tray = new Tray();
             SetBinding(VisibilityProperty, new Binding()
             {
                 Source = tray,
@@ -33,7 +35,6 @@ namespace Wingale.View
         protected override void OnClosing(CancelEventArgs e)
         {
             base.OnClosing(e);
-            Tray tray = FindResource("tray") as Tray;
             Visibility = Visibility.Hidden;
             e.Cancel = tray.Able;
         }

@@ -7,12 +7,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <DockPanel>
-        <ToolBarPanel DockPanel.Dock="Top">
+        <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
-                
+                <Button Click="OnUpdate">Update</Button>
             </ToolBar>
-        </ToolBarPanel>
-        <ListView x:Name="table">
+            <ToolBar>
+                <TextBox x:Name="keyword" Width="200"/>
+                <Button Click="OnSearch">Search</Button>
+            </ToolBar>
+        </ToolBarTray>
+        <ListView x:Name="table" GridViewColumnHeader.Click="OnSort" SelectionChanged="OnSelect">
             <ListView.View>
                 <GridView>
                     <GridView.Columns>

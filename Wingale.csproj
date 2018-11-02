@@ -26,6 +26,7 @@
   
   <ItemGroup>
 	<Compile Include="src\Kernel32.cs" />
+	<Compile Include="src\Injection.cs" />
   </ItemGroup>
   
   <ItemGroup>

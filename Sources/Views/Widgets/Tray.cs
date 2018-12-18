@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.ComponentModel;
 
-namespace Wingale.Widget
+namespace Wingale.Views.Widgets
 {
     using Application = System.Windows.Forms.Application;
 

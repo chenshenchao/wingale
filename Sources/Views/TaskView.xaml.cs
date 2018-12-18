@@ -16,7 +16,7 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Collections.ObjectModel;
 
-namespace Wingale.View
+namespace Wingale.Views
 {
     /// <summary>
     /// TaskView.xaml 的交互逻辑

@@ -1,7 +1,6 @@
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:Wingale.View"
-        xmlns:widget="clr-namespace:Wingale.Widget"
-        x:Class="Wingale.View.MainWindow">
+        xmlns:local="clr-namespace:Wingale.Views"
+        x:Class="Wingale.Views.MainWindow">
     <local:TaskView></local:TaskView>
 </Window>

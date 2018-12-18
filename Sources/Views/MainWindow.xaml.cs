@@ -2,9 +2,9 @@ using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Data;
-using Wingale.Widget;
+using Wingale.Views.Widgets;
 
-namespace Wingale.View
+namespace Wingale.Views
 {
     /// <summary>
     /// 

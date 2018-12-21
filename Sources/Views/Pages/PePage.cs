@@ -4,9 +4,9 @@ using System.Windows.Controls;
 
 namespace Wingale.Views.Pages
 {
-    public partial class TaskManagement : Page
+    public partial class PePage : Page
     {
-        public TaskManagement()
+        public PePage()
         {
             InitializeComponent();
         }

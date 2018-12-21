@@ -1,32 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Collections.ObjectModel;
 
-namespace Wingale.Views
+namespace Wingale.Views.Pages
 {
-    /// <summary>
-    /// TaskView.xaml 的交互逻辑
-    /// </summary>
-    public partial class TaskView : UserControl
+    public partial class TaskPage : Page
     {
-        public TaskView()
+        public TaskPage()
         {
             InitializeComponent();
-            table.ItemsSource = new ObservableCollection<Process>( Process.GetProcesses());
+            table.ItemsSource = new ObservableCollection<Process>(Process.GetProcesses());
         }
 
         private void OnSearch(object sender, RoutedEventArgs e)
@@ -50,7 +37,8 @@ namespace Wingale.Views
         {
             ObservableCollection<Process> processes = table.ItemsSource as ObservableCollection<Process>;
             GridViewColumnHeader header = e.OriginalSource as GridViewColumnHeader;
-            switch (header.Content) {
+            switch (header.Content)
+            {
                 case "PID":
                     table.ItemsSource = new ObservableCollection<Process>(processes.OrderBy(i => i.Id));
                     break;

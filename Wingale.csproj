@@ -6,6 +6,10 @@
     <TargetFramework>net46</TargetFramework>
     <ApplicationIcon>Wingale.ico</ApplicationIcon>
 	<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	<StartupObject>Wingale.Program</StartupObject>
+	<Company />
+	<Authors>Chen Shen Chao</Authors>
+	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -57,34 +61,19 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Page Include="Sources\Views\Pages\TaskManagement.xaml">
+    <Page Include="Sources\Views\Pages\TaskPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Sources\Views\Pages\TaskManagement.xaml.cs">
-      <DependentUpon>TaskManagement.xaml</DependentUpon>
+    <Compile Include="Sources\Views\Pages\TaskPage.xaml.cs">
+      <DependentUpon>TaskPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Page Include="Sources\Views\TaskView.xaml">
+    <Page Include="Sources\Views\Pages\PePage.xaml">
       <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Sources\Views\TaskView.xaml.cs">
-      <DependentUpon>TaskView.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Include="Sources\Views\PeView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="Sources\Views\PeView.xaml.cs">
-      <DependentUpon>PeView.xaml</DependentUpon>
+    <Compile Include="Sources\Views\Pages\PePage.cs">
+      <DependentUpon>PePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -2,5 +2,5 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Wingale.Views"
         x:Class="Wingale.Views.MainWindow">
-    <Frame Source="Pages/TaskPage.xaml"/>
+    <Frame Source="Pages/PingPage.xaml"/>
 </Window>

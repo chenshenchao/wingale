@@ -7,13 +7,14 @@ using Wingale.Views.Widgets;
 namespace Wingale.Views
 {
     /// <summary>
-    /// 
+    /// 主窗口。
     /// </summary>
     public partial class MainWindow : Window
     {
         private Tray tray;
+
         /// <summary>
-        /// 
+        /// 构造子。
         /// </summary>
         public MainWindow()
         {
@@ -29,7 +30,7 @@ namespace Wingale.Views
         }
 
         /// <summary>
-        /// 
+        /// 关闭事件回调。
         /// </summary>
         /// <param name="e"></param>
         protected override void OnClosing(CancelEventArgs e)

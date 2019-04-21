@@ -10,12 +10,20 @@ namespace Wingale.Views.Pages
 {
     public partial class TaskPage : Page
     {
+        /// <summary>
+        /// 构造子。
+        /// </summary>
         public TaskPage()
         {
             InitializeComponent();
             table.ItemsSource = new ObservableCollection<Process>(Process.GetProcesses());
         }
 
+        /// <summary>
+        /// 搜索指定名进程。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnSearch(object sender, RoutedEventArgs e)
         {
             List<Process> result = new List<Process>();
@@ -28,11 +36,21 @@ namespace Wingale.Views.Pages
             table.ItemsSource = new ObservableCollection<Process>(result);
         }
 
+        /// <summary>
+        /// 更新当前进程信息。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnUpdate(object sender, RoutedEventArgs e)
         {
             table.ItemsSource = new ObservableCollection<Process>(Process.GetProcesses());
         }
 
+        /// <summary>
+        /// 根据选定列排序。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnSort(object sender, RoutedEventArgs e)
         {
             ObservableCollection<Process> processes = table.ItemsSource as ObservableCollection<Process>;
@@ -48,6 +66,11 @@ namespace Wingale.Views.Pages
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnSelect(object sender, SelectionChangedEventArgs e)
         {
 

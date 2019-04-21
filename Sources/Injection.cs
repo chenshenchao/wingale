@@ -8,6 +8,12 @@ namespace Wingale
 {
     public class Injection
     {
+        /// <summary>
+        /// 注入代码。
+        /// </summary>
+        /// <param name="pid"></param>
+        /// <param name="param"></param>
+        /// <param name="program"></param>
         public void InjectCode(Int32 pid, byte[] param, byte[] program)
         {
             int number;

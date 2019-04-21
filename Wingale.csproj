@@ -72,8 +72,15 @@
     <Page Include="Sources\Views\Pages\PePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Compile Include="Sources\Views\Pages\PePage.cs">
+    <Compile Include="Sources\Views\Pages\PePage.xaml.cs">
       <DependentUpon>PePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Sources\Views\Pages\PingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Sources\Views\Pages\PingPage.xaml.cs">
+      <DependentUpon>PingPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

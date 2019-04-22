@@ -43,6 +43,7 @@
     </Compile>
     <Compile Include="Sources\Kernel32.cs" />
     <Compile Include="Sources\Injection.cs" />
+    <Compile Include="Sources\Utils\IPAddressExtension.cs" />
   </ItemGroup>
   
   <ItemGroup>

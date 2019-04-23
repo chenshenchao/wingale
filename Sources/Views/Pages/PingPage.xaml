@@ -15,12 +15,22 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0">IPv4 Address：</TextBlock>
         <TextBox x:Name="address"  Grid.Row="0" Grid.Column="1">192.168.1.1</TextBox>
         <TextBlock Grid.Row="1" Grid.Column="0">IPv4 Netmask：</TextBlock>
         <TextBox x:Name="netmask" Grid.Row="1" Grid.Column="1">255.255.255.0</TextBox>
         <Button Grid.Row="2" Grid.Column="0" Click="OnClickScan">Scan</Button>
-        <TextBlock x:Name="info" Grid.Row="2" Grid.Column="1"></TextBlock>
+        <ListView x:Name="replyList" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="IP Address" DisplayMemberBinding="{Binding IP}"/>
+                    <GridViewColumn Header="Reply IP Address" DisplayMemberBinding="{Binding ReplyIP}"/>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}"/>
+                    <GridViewColumn Header="Roundtrip Time" DisplayMemberBinding="{Binding Time}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

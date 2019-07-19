@@ -3,7 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace Wingale
 {
-
     public static class Kernel32
     {
         public const int CREATE_BREAKAWAY_FROM_JOB = 0x01000000;

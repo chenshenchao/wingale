@@ -5,11 +5,11 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net46</TargetFramework>
     <ApplicationIcon>Wingale.ico</ApplicationIcon>
-	<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-	<StartupObject>Wingale.Program</StartupObject>
-	<Company />
-	<Authors>Chen Shen Chao</Authors>
-	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <StartupObject>Wingale.Program</StartupObject>
+	  <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company />
+    <Authors>Chen Shen Chao</Authors>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -102,6 +102,7 @@
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="Lucene.Net" Version="3.0.3" />
     <PackageReference Include="SQLite.CodeFirst" Version="1.5.2.28" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.111" />
   </ItemGroup>
@@ -111,6 +112,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Sources\Entities\" />
   </ItemGroup>
 
 </Project>

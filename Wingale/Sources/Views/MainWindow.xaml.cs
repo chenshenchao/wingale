@@ -11,7 +11,7 @@ namespace Wingale.Views
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Tray tray;
+        // private Tray tray;
 
         /// <summary>
         /// ¹¹Ôì×Ó¡£
@@ -19,14 +19,14 @@ namespace Wingale.Views
         public MainWindow()
         {
             InitializeComponent();
-            tray = new Tray();
-            SetBinding(VisibilityProperty, new Binding()
-            {
-                Source = tray,
-                Path = new PropertyPath("Visibility"),
-                Mode = BindingMode.TwoWay
-            });
-            tray.Closed += (o, e) => Close();
+            // tray = new Tray();
+            // SetBinding(VisibilityProperty, new Binding()
+            // {
+            //    Source = tray,
+            //    Path = new PropertyPath("Visibility"),
+            //    Mode = BindingMode.TwoWay
+            //});
+            //tray.Closed += (o, e) => Close();
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Wingale.Views
         {
             base.OnClosing(e);
             Visibility = Visibility.Hidden;
-            e.Cancel = tray.Able;
+            //e.Cancel = tray.Able;
         }
     }
 }

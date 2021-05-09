@@ -17,7 +17,7 @@ namespace Wingale.Views.Widgets
         public event EventHandler Closed;
 
         private NotifyIcon notifyIcon;
-        private MenuItem visibilityItem;
+        // private MenuItem visibilityItem;
         private Visibility visibility;
 
         public bool Able { get; private set; }
@@ -26,7 +26,7 @@ namespace Wingale.Views.Widgets
             get { return visibility; }
             set
             {
-                visibilityItem.Text = Visibility.ToString();
+                //visibilityItem.Text = Visibility.ToString();
                 visibility = value;
                 PropertyChanged(this, new PropertyChangedEventArgs("Visibility"));
             }
@@ -37,33 +37,33 @@ namespace Wingale.Views.Widgets
         /// </summary>
         public Tray()
         {
-            ContextMenu contextMenu = new ContextMenu();
-            visibilityItem = new MenuItem("Hidden");
-            visibilityItem.Click += (o, e) =>
-            {
-                if (Visibility.Visible == Visibility)
-                {
-                    Visibility = Visibility.Hidden;
-                }
-                else
-                {
-                    Visibility = Visibility.Visible;
-                }
-            };
-            MenuItem closeItem = new MenuItem("Close");
-            closeItem.Click += (o, e) =>
-            {
-                Able = false;
-                Closed(o, e);
-            };
-            contextMenu.MenuItems.Add(visibilityItem);
-            contextMenu.MenuItems.Add(closeItem);
+            //ContextMenu contextMenu = new ContextMenu();
+            //visibilityItem = new MenuItem("Hidden");
+            //visibilityItem.Click += (o, e) =>
+            //{
+            //    if (Visibility.Visible == Visibility)
+            //    {
+            //        Visibility = Visibility.Hidden;
+            //    }
+            //    else
+            //    {
+            //        Visibility = Visibility.Visible;
+            //    }
+            //};
+            //MenuItem closeItem = new MenuItem("Close");
+            //closeItem.Click += (o, e) =>
+            //{
+            //    Able = false;
+            //    Closed(o, e);
+            //};
+            //contextMenu.MenuItems.Add(visibilityItem);
+            //contextMenu.MenuItems.Add(closeItem);
 
             Able = true;
             notifyIcon = new NotifyIcon();
             notifyIcon.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
             notifyIcon.Visible = true;
-            notifyIcon.ContextMenu = contextMenu;
+            //notifyIcon.ContextMenu = contextMenu;
         }
     }
 }

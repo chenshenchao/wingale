@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wingale", "Wingale\Wingale.
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Wingale.Setup", "Wingale.Setup\Wingale.Setup.vdproj", "{E74C3A80-FD56-4778-85E4-27135D896CDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wingale.Winnt", "Wingale.Winnt\Wingale.Winnt.csproj", "{B5F3DCFE-CA4A-40BE-A032-59E1004F66FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E74C3A80-FD56-4778-85E4-27135D896CDC}.Debug|Any CPU.Build.0 = Debug
 		{E74C3A80-FD56-4778-85E4-27135D896CDC}.Release|Any CPU.ActiveCfg = Release
 		{E74C3A80-FD56-4778-85E4-27135D896CDC}.Release|Any CPU.Build.0 = Release
+		{B5F3DCFE-CA4A-40BE-A032-59E1004F66FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F3DCFE-CA4A-40BE-A032-59E1004F66FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F3DCFE-CA4A-40BE-A032-59E1004F66FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F3DCFE-CA4A-40BE-A032-59E1004F66FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

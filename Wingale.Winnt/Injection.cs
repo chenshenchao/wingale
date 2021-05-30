@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wingale
+namespace Wingale.Winnt
 {
     public class Injection
     {

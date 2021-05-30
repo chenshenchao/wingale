@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Wingale
+namespace Wingale.Winnt
 {
     public static class User32
     {

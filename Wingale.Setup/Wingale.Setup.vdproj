@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_B83B14FF82FE41AFAB8C4032C8901F7B"
+        "MsmKey" = "8:_64554DBFF9A74D5092DDBAE3BBF01ADE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -44,6 +44,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -68,6 +76,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -75,6 +91,62 @@
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_B94B9A3C04C347A7BCCDFE03AFAFC1F7"
+            {
+            "Name" = "8:发布项 from Wingale.Service (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_64554DBFF9A74D5092DDBAE3BBF01ADE"
+            "FileType" = "3:2"
+            "InstallAction" = "3:4"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_DEA52E59_312A_4849_9241_578B69CBBE13"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_DDCCF68887664CABABE30196F1B7AA41"
+            {
+            "Name" = "8:发布项 from Wingale.Service (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_64554DBFF9A74D5092DDBAE3BBF01ADE"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_58292D29_0032_4B05_B0C7_F7AF6A84BB6C"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_EC678922A35C4660ADEFDB991C3EAAD8"
+            {
+            "Name" = "8:发布项 from Wingale.Service (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_64554DBFF9A74D5092DDBAE3BBF01ADE"
+            "FileType" = "3:2"
+            "InstallAction" = "3:3"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_C5753865_2934_4ACA_B55E_FB3082734C45"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_FFE88E4FCB0249FCA86575C0DEBCCE3C"
+            {
+            "Name" = "8:发布项 from Wingale.Service (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_64554DBFF9A74D5092DDBAE3BBF01ADE"
+            "FileType" = "3:2"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_45970A3F_D4D1_473C_BCDD_F0AF2E36A4FC"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
         }
         "DefaultFeature"
         {
@@ -86,6 +158,16 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_56EF1EA0B14641B79EFC810705CF5288"
+                {
+                "Name" = "8:.NET Core"
+                "Message" = "8:[VSDNETCOREMSG]"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:https://dotnet.microsoft.com/download/dotnet-core/[NetCoreVerMajorDotMinor]"
+                "IsNETCore" = "11:TRUE"
+                "Architecture" = "2:0"
+                "Runtime" = "2:0"
+                }
             }
         }
         "File"
@@ -666,9 +748,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B83B14FF82FE41AFAB8C4032C8901F7B"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_64554DBFF9A74D5092DDBAE3BBF01ADE"
             {
-            "SourcePath" = "8:..\\Wingale\\Targets\\Objects\\Debug\\net5.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\Wingale.Service\\Targets\\Objects\\Debug\\net5.0\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8F56EDAC80424285B51E13384DB082C0"
@@ -688,7 +770,7 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:PublishItems"
-            "OutputProjectGuid" = "8:{E87209B6-1782-42A8-BFE5-48650CA0FCB3}"
+            "OutputProjectGuid" = "8:{BECB7F93-7D2C-403D-B1E8-C3C3533D5C5A}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {

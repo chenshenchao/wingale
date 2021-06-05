@@ -1,7 +1,7 @@
-<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Application x:Class="Wingale.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Wingale"
-             x:Class="Wingale.Program"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>

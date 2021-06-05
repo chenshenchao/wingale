@@ -1,105 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>Wingale.ico</ApplicationIcon>
-    <StartupObject>Wingale.Program</StartupObject>
-	  <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultPageItems>false</EnableDefaultPageItems>
-	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Company />
-    <Authors>Chen Shen Chao</Authors>
-    <SignAssembly>false</SignAssembly>
-    <PackageProjectUrl>https://github.com/chenshenchao/wingale</PackageProjectUrl>
+    <StartupObject>Wingale.App</StartupObject>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>Targets/Binary/Debug</OutputPath>
+    <OutputPath>Targets\Binaries\Debug</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>Targets/Binary/Release</OutputPath>
+    <OutputPath>Targets\Binaries\Release</OutputPath>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Sources\Utils\IPAddressExtension.cs" />
-  </ItemGroup>
-  
-  <ItemGroup>
-	  <Compile Include="Sources\Views\Widgets\Tray.cs" />
+    <None Remove="Resources\Icons\Console.svg" />
+    <None Remove="Resources\Network-Scan.svg" />
   </ItemGroup>
 
   <ItemGroup>
-    <ApplicationDefinition Include="Sources\Program.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-	<Compile Include="Sources\Program.xaml.cs">
-      <DependentUpon>Program.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Page Include="Sources\Views\Pages\AboutPage.xaml">
-	  <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-	</Page>
-	<Compile Include="Sources\Views\Pages\AboutPage.xaml.cs">
-      <DependentUpon>AboutPage.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Sources\Views\Pages\TaskPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="Sources\Views\Pages\TaskPage.xaml.cs">
-      <DependentUpon>TaskPage.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Sources\Views\Pages\PePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Compile Include="Sources\Views\Pages\PePage.xaml.cs">
-      <DependentUpon>PePage.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Sources\Views\Pages\PingPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Compile Include="Sources\Views\Pages\PingPage.xaml.cs">
-      <DependentUpon>PingPage.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Include="Sources\Views\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="Sources\Views\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="DotNetProjects.SVGImage" Version="4.1.94" />
     <PackageReference Include="HandyControl" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Wingale.Winnt\Wingale.Winnt.csproj" />
+    <Resource Include="Resources\Icons\Console.svg" />
+    <Resource Include="Resources\Icons\Network-Scan.svg" />
   </ItemGroup>
 
 </Project>

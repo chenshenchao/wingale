@@ -19,6 +19,7 @@
   <ItemGroup>
     <None Remove="Resources\Icons\Console.svg" />
     <None Remove="Resources\Network-Scan.svg" />
+    <None Remove="Resources\Wingale.db" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +30,7 @@
   <ItemGroup>
     <Resource Include="Resources\Icons\Console.svg" />
     <Resource Include="Resources\Icons\Network-Scan.svg" />
+    <Resource Include="Resources\Wingale.db" />
   </ItemGroup>
 
 </Project>

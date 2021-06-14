@@ -13,7 +13,7 @@
         <Button ToolTip="网段搜索" Width="100" Height="100" Margin="10,10">
             <svg:SVGImage Source="/Wingale;component/Resources/Icons/Network-Scan.svg" Width="80" Height="80"/>
         </Button>
-        <Button ToolTip="网段搜索" Width="100" Height="100" Margin="10,10">
+        <Button ToolTip="进程管理" Width="100" Height="100" Margin="10,10" Click="onClickProcessButton">
             <svg:SVGImage Source="/Wingale;component/Resources/Icons/Console.svg" Width="80" Height="80"/>
         </Button>
     </WrapPanel>

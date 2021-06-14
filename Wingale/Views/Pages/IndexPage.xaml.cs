@@ -24,5 +24,11 @@ namespace Wingale.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void onClickProcessButton(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = Window.GetWindow(this) as MainWindow;
+            window.SwitchPage("Process");
+        }
     }
 }

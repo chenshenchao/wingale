@@ -24,5 +24,11 @@ namespace Wingale.Views
         {
             InitializeComponent();
         }
+
+        public void SwitchPage(string name)
+        {
+            string path = string.Format("pack://application:,,,/Views/Pages/{0}Page.xaml", name);
+            PageFrame.Navigate(new Uri(path));
+        }
     }
 }
